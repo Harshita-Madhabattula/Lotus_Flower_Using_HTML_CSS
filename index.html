@@ -4,78 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-image: linear-gradient(to top left,green 30%,white 40%,orange 50%,green 60%,white 70%,orange 80%);
-            background-repeat: no-repeat;
-            background-size: 100% 1000px;
-        }
-        .parent{
-            width: 350px;
-            height: 350px;
-            background-color: chocolate;
-            position: relative;
-            top: 300px;
-            left: 600px;
-            animation: flower 20s 3s infinite;
-        }
-        @keyframes flower {
-            from{
-                filter: hue-rotate(0deg);
-            }
-            to{
-                filter: hue-rotate(3000deg);
-            } 
-        }
-        .common{
-            width: 200px;
-            height: 200px;
-            background-color: palevioletred;
-            margin: 10px;
-            border-radius: 300px 0px ;
-            position: absolute;
-            left: 65px;
-            top: -108px;
-            rotate: -45deg;
-            transition: all 20s; 
-        }
-        .parent:hover .child1{
-            rotate: -25deg;
-        }
-        .parent:hover .child2{
-            rotate: 0deg;
-        }
-        .parent:hover .child3{
-            rotate: -70deg;
-        }
-        .parent:hover .child4{
-            rotate: -95deg;
-        }
-        .box{
-            width: 205px;
-            height: 200px;
-            background-color:rgb(192, 245, 114);
-            position:absolute;
-            left: 73px;
-            border-radius: 20px 20px 100% 100%;
-        }
-        audio{
-            opacity: 0;
-        } 
-    </style>
+    <link rel="stylesheet" href="./flower.css">
 </head>
 <body>
     <div class="parent">
-        <!-- .commonchild$*5  dollar for numbers 
-         .commonchild*5  -->
         <div class="common child1"></div>
         <div class="common child2"></div>
         <div class="common child3"></div>
         <div class="common child4"></div>
         <div class="common child5"></div>
         <div class="box">
-            <audio src="/MEDIA/AUDIOS/nodens-field-song-6041.mp3" controls></audio>
         </div>
     </div>
+    
 </body>
 </html>
